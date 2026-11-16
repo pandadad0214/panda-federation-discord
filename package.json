@@ -1,0 +1,17 @@
+{
+  "name": "panda-federation-discord",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker Discord interactions endpoint for Panda Federation, including the /tools command.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "register": "node register-commands.mjs",
+    "test": "node --test test/verify.test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.159.0"
+  }
+}

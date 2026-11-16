@@ -1,0 +1,11 @@
+name = "panda-federation-discord"
+main = "src/index.js"
+compatibility_date = "2026-11-16"
+workers_dev = true
+
+# Set the Discord application Public Key after the app exists:
+#   wrangler secret put PUBLIC_KEY
+# or, for a non-secret var:
+#   wrangler versions secret (not used here)
+# Do not commit the real key. A placeholder is used only on the first
+# workers.dev deploy so unsigned POSTs can be checked (they return 401).
